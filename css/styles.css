@@ -10,7 +10,7 @@
     /* cloud */
     --background-light: #F4F4FD;
     /* white */
-    --white-yext-color: #FFFFFF;
+    --white-text-color: #FFFFFF;
     /* cornflower */
     --accent-subtitle: #E7E9FC;
     /* light slate */
@@ -98,7 +98,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: var(--white-yext-color);
+    color: var(--white-text-color);
     background-color: var(--accent-color);
     padding-top: 188px;
     padding-bottom: 188px;
@@ -123,10 +123,7 @@ padding-top: 130px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--accent-subtitle);}
-/* .section-header{
-            padding-top: 24px;
-            padding-bottom: 24px;
-        } */
+
 
 /**
   |============================
@@ -243,7 +240,7 @@ margin-right: 0px
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.04em;
-            color: var(--white-yext-color);
+            color: var(--white-text-color);
             background-color: var(--primary-brand-color);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             margin-left: auto;
@@ -332,7 +329,7 @@ gap: 24px;}
         
     }
 .list-style{
-        background-color: var(--white-yext-color);
+        background-color: var(--white-text-color);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
     }
@@ -412,12 +409,15 @@ color: var(--accent-brand-color);}
 font-size: 16px;
 line-height: 1,5;
 letter-spacing: 0.02em;
-color: var(--white-yext-color);
+color: var(--white-text-color);
 margin-bottom: 16px;;
                 }
                 .footer-flex{
                     display: flex;
-                    gap: 120px;
+                    /* gap: 120px; */
+                }
+                .footer-social-network {
+                    margin-left: 120px;
                 }
                 .footer-network{
                     display: flex;
@@ -447,6 +447,53 @@ margin-bottom: 16px;;
                     background-color: var(--green-success-color-100);
                     
                 }
+                .footer-subscribe{
+                    margin-left: 80px;
+                }
+                .subscribe-form {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 16px;
+
+                }
+          
+                .subscribe-input {
+                    display: block;
+                    width: 264px;
+                    height: 40px;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+background-color: transparent;
+outline: transparent;
+margin-right: 24px;
+padding: 8px 16px;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: var(--white-text-color);
+                }
+                .subscribe-input::placeholder{
+                    font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
+
+                }
+                .subscribe-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    padding: 8px 24px;
+                    width: 165px;
+                    height: 40px;
+                    background-color: var(--primary-brand-color);
+                    border-radius: 4px;
+                    border: 1px solid var(--primary-brand-color);
+                }
+                .subtitle-btn {
+                    margin: 0;
+                }
+
                 /**
                 |============================
                 | Portfolio page
@@ -473,7 +520,7 @@ margin-bottom: 16px;;
                          
                 .btn-filter:hover,
                 .btn-filter:focus {
-                             color: var(--white-yext-color);
+                             color: var(--white-text-color);
                              background-color: var(--accent-brand-color);
                              border: 1px solid var(--accent-brand-color);
                              box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -497,7 +544,7 @@ margin-bottom: 16px;;
                                 border-bottom: 1px solid var(--accent-subtitle);
                                 border-left: 1px solid var(--accent-subtitle);
                                 border-right: 1px solid var(--accent-subtitle);
-                                background-color: var(--white-yext-color);
+                                background-color: var(--white-text-color);
                             }
                             .cards{
                                 width: calc((100% - 2*24px) / 3);
