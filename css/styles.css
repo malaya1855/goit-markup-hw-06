@@ -326,7 +326,9 @@ gap: 24px;}
         text-align: center;
         padding-top: 32px;
         padding-bottom: 32px;
-        
+        padding-left: 16px;
+        padding-right: 16px;
+
     }
 .list-style{
         background-color: var(--white-text-color);
@@ -687,17 +689,19 @@ color: var(--accent-color);
     display: block;
     margin-top: 16px;
 }
-.input-list{
-    position: relative;
-}
+
 .modal-label {
     margin-bottom: 4px;
     font-size: 12px;
-line-height: calc (14 / 12);
-letter-spacing: 0.01em;
-color: var(--addordinary-text-color);
+    line-height: calc (14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--addordinary-text-color);
 }
 
+.modal-input-field{
+    position: relative;
+
+}
 .modal-input {
     display: block;
     width: 100%;
@@ -712,21 +716,20 @@ color: var(--addordinary-text-color);
     outline: transparent;
     transition: var(--hover-animation);
 }
-
 .modal-form-icon {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     left: 16px;
-    /* transform: translateY(-50%); */
     pointer-events: none;
     fill: var(--accent-color);
     transition: var(--hover-animation);
 }
-.modal-input:focus + .modal-form-icon {
-    fill: var(--primary-brand-color);
-}
 .modal-input:focus{
     border: 1px solid var(--primary-brand-color);
+}
+.modal-input:focus + .modal-form-icon {
+    fill: var(--primary-brand-color);
 }
 
 .modal-comment{
@@ -794,7 +797,11 @@ color: #757575;
     transform: translateY(-50%);
     fill: var(--white-text-color);
     pointer-events: none;
+    transition: var(--hover-animation);
   }
+  .modal-checkbox:checked + .check-icon{
+    fill: var(--background-light)}
+
   .modal-form-btn {
     display: block;
     margin-left: auto;
